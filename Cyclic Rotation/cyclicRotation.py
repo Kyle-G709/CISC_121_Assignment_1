@@ -1,7 +1,7 @@
 def solution(A, K):
     for i in range(K):
-        last = A[len(A) - 1]
-        for j in range(len(A)):
+        last = A[len(A) - 1] #Save the last element in the array
+        for j in range(len(A)): #Swap the array element by 1
             temp = A[j]
             A[j] = last
             last = temp

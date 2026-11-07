@@ -1,12 +1,12 @@
 def solutions(A):
-    pairs = {}
-    for i in A:
-        if i in pairs:
+    pairs = {} # create an empty dictionary
+    for i in A: # for each element, add it to the dictionary or increase occurrence by 1
+        if i in pairs: 
             pairs[i] += 1
         else:
             pairs[i] = 1
-    for key,value in pairs.items():
-        if value % 2 != 0:
+    for key,value in pairs.items(): 
+        if value % 2 != 0: #Checks if key has a pair, and if it doesn't return the key
             return key
 
 def main():
